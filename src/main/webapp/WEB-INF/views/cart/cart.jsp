@@ -82,7 +82,7 @@
 								<input type="hidden" class="individual_productNum_input" value="${ci.productNum}">								
 							</td>
 							<td class="td_width_2">
-								<div class="image_wrap" data-productNum="${ci.imageList[0].productNum}" data-path="${ci.imageList[0].uploadPath}" data-uuid="${ci.imageList[0].uuid}" data-imageName="${ci.imageList[0].imageName}">>
+								<div class="image_wrap" data-productImgNum="${ci.imageList[0].productImgNum}" data-productNum="${ci.imageList[0].productNum}" data-imgName="${ci.imageList[0].imgName}" data-originalName="${ci.imageList[0].originalName}">
 									<img alt="" src="">
 								</div>
 								
@@ -208,6 +208,11 @@ $(document).ready(function(){
 	
 	/* 이미지 삽입 */
 	$(".image_wrap").each(function(i, obj){
+		
+		data-productImgNum="${ci.imageList[0].productImgNum}"
+		data-productNum="${ci.imageList[0].productNum}"
+		data-imgName="${ci.imageList[0].imgName}"
+		data-originalName="${ci.imageList[0].originalName}">
 		
 		const bobj = $(obj);
 		

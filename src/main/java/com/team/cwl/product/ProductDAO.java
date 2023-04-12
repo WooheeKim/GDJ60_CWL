@@ -37,7 +37,7 @@ public class ProductDAO {
    
    public List<ProductImgDTO> getProductImgList(Long productNum) {
 	      // TODO Auto-generated method stub
-	      return null;
+	   return sqlSession.selectList(NAMESPACE+"getProductImgList", productNum);
 	   }
    
    public Long getTotalCount(Pagination pagination) throws Exception {

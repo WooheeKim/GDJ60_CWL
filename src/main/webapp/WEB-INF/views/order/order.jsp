@@ -151,7 +151,7 @@
 							<c:forEach items="${orderList}" var="ol">
 								<tr>
 									<td>
-										<div class="image_wrap" data-productNum="${ol.imageList[0].productNum}" data-path="${ol.imageList[0].uploadPath}" data-uuid="${ol.imageList[0].uuid}" data-fileName="${ol.imageList[0].fileName}">>
+										<div class="image_wrap" data-productImgNum="${ci.imageList[0].productImgNum}" data-productNum="${ci.imageList[0].productNum}" data-imgName="${ci.imageList[0].imgName}" data-originalName="${ci.imageList[0].originalName}">
 											<img alt="" src="">
 										</div>
 									</td>
